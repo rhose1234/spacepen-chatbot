@@ -16,9 +16,9 @@
                 <h2>welcome to Amienpay</h2>
                 <p>Fill the form with necessary information</p>
 
-                <form action="index.html">
+                <form  class="myform">
                     <label for="">Fullname</label>
-                    <input type="text" placeholder="input your name here">
+                    <input type="text" placeholder="input your name here" name="fullname">
                     <label for=""> Business name</label>
                     <input type="text" placeholder="input business name">
                     <label for="">Phone number</label>
@@ -49,6 +49,32 @@
             
         </section>
     </main>
+    <script>
+
+        const myform = document.querySelector('.myform');
+        myform.addEventListener('submit', () => {
+            event.preventDefault();
+
+
+            const formData = new FormData (myform);
+            const data = Object.fromEntries(formData);
+
+            fetch('https://staging.apws.spacepen.tech/helpDesk.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }).then(res => res.json())
+              .then(data => console.log(data))
+              .catch(error => console.error(error));
+
+        });
+
+
+        
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
+<!-- https://staging.apws.spacepen.tech/helpDesk.php -->
