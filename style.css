@@ -1,331 +1,125 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
+    font-family: 'poppins';
 }
-
-
-.a-text{
-    background: url(image/1668074576502.jpg);
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 700px;
-    padding-left: 50px;
-    margin: 0 auto;
-
-  
+body{
+    background-color: rgba(218, 218, 218);
 }
-#close-bot{
+.show-btn{
+    position: absolute;
+    left: 75%;
+    top: 83%;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: blueviolet;
+    color: #fff;
+
+}
+.show-btn i{
+    margin: 15px 17px;
+    font-size: 60px;
+
+}
+input[type="checkbox"]{
     display: none;
 }
-#special{
-    height: 80px;
+#show:checked ~ .wrapper{
+    display:block;
 }
-.a-text h2{
-font-size: 25px;
-padding-top: 50px;
-padding-bottom: 10px;
-}
-.a-text p{
-    color: gray;
-}
-
-.a-text form{
-    max-width: 300px;
-    margin-top: 60px;
-
-}
-.a-text form input{
-    width: 90%;
-    padding: 13px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-.a-text form label{
-    font-size: 18px;
-    padding-bottom: 10px;
-}
-section{
-    padding-bottom: 90px;
-    padding-top: 50px;
-}
-.a-text img{
-    float: right;
-}
-
-
-
-.b-text img{
-    width: 20%;
-    display: block;
-}
-
-#hidden{
-    visibility: hidden;
-}
-
-
-.c-text {
-    background-color: blueviolet;
-    max-width: 100px;
-    margin: 0 auto;
-    justify-content: right;
-    border-radius: 50%;
-}
-
-.e-text img{
-    width: 3%;
-    float: right;
-
-}
-@media(max-width:768px){
-   .a-text{
-       height: 50vh;
-       padding-left: 20px;
-       overflow-x: hidden;
-       padding-bottom: 20px;
-       top: 0px;
-       
-       position: relative;
-       left: 20px;
-       max-width: 300px;
-       border-top-left-radius: 20px;
-       border-bottom-right-radius: 20px;
-       border: 3px solid rgb(136, 0, 247);
-       /* border-top-left-radius: 20px;
-       border-bottom-right-radius: 20px;
-       border: 3px solid rgb(136, 0, 247); */
-
-   }
-   .a-text h2{
-       font-size: 20px;
-   }
+.wrapper{
+    display: none;
    
-.a-text form{
-    max-width: 220px;
-    margin-top: 60px;
-
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.a-text form input{
-    width: 90%;
-    padding: 13px;
+h2{
+    color: #fff;
+    padding: 15px;
+    background-color: blueviolet;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+p{
+    font-size: 16px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    text-align: center;
 }
-.a-text form label{
-    font-size: 18px;
-    padding-bottom: 10px;
-}
+form{
+    margin: 30px;
+    width: 90% !important;
+    padding: 50px !important;
+    border: 1px solid rgb(236, 234, 234);
+    
 
-.d-text button{
-    width: 40%;
-    height: 50px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin-left: 20px;
+}
+input{
+    display: block ;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: blueviolet;
+    margin-bottom: 16px;border-radius: 12px;
+    border: 1px solid rgb(236, 234, 234);
  
-    border: none;
-    padding: 4px;
-    background-color: blueviolet;
-    color: aliceblue;
-    margin-top: 30px;
-
 }
-.c-text{
-    margin-left: 30px;
-    margin-top: 20px;
+input#special{
+    height: 100px !important;
+}
+input::placeholder{
+    color: rgb(236, 234, 234);
 }
 
-.c-text{
-    margin-top: 20px;
-    position: fixed;
-    left: 220px;
-    top: 450px;
-    z-index: 10;
-    right: 0;
-   
-}
-.c-text button{
-    border: none;
-    cursor: pointer;
-height: 50px;
-width: 110px;
-
-padding-left: 5px;
-padding-right: 5px;
-border-radius: 10px;
-background-color: blueviolet;
-    color: aliceblue;
-}
-
-.e-text img{
-    width: 10%;
-    float: right;
-    position: relative;
-right: 10px;
-}
-}
-@media(min-width:768px){
-    
-.a-text{
-    background: url(image/1668074576502.jpg);
+button{
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 300px;
-    height: 780px;
- position: relative;
- left: 190px;
- top: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
-border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border: 3px solid rgb(136, 0, 247);
-    margin: 0 auto;
-   
-}
-.a-text h2{
-font-size: 25px;
-padding-top: 50px;
-padding-bottom: 10px;
-}
-.a-text p{
-    color: gray;
-}
-
-.a-text form{
-    max-width: 300px;
-    margin-top: 40px;
-  
-
-}
-.a-text form input{
-    width: 90%;
-    padding: 13px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.a-text form label{
-    font-size: 18px;
-    padding-bottom: 10px;
-}
-.d-text button{
-    width: 30%;
-    height: 40px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    padding: 8px;
     border: none;
-    padding: 4px;
-    margin-bottom: 30px;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 12px;
     background-color: blueviolet;
-    color: aliceblue;
-    margin-top: 30px;
 
 }
-.c-text{
-    margin-top: 20px;
-    position: fixed;
-    left: 600px;
-    top: 860px;
-    z-index: 10;
-    right: 0;
-   
-}
-.c-text button{
-    border: none;
-    cursor: pointer;
-height: 50px;
-width: 120px;
-border-radius: 10px;
-background-color: blueviolet;
-    color: aliceblue;
-}
-.e-text img{
-    width: 6%;
-    float: right;
-    position: relative;
-    right: 70px;
-    top: 100px;
-}
-}
-@media(min-width:1024px){
-    
-.a-text{
-    background: url(image/1668074576502.jpg);
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 300px;
-    height: 730px;
- position: relative;
- left: 230px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border: 3px solid rgb(136, 0, 247);
-}
-.a-text h2{
-font-size: 25px;
-padding-top: 50px;
-padding-bottom: 10px;
-}
-.a-text p{
-    color: gray;
-}
-
-.a-text form{
-    max-width: 300px;
-    margin-top: 30px;
-
-    
+input:focus{
+    border-color: blueviolet;
 
 }
-.a-text form input{
-    width: 90%;
-    padding: 13px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.a-text form label{
-    font-size: 14px;
-    padding-bottom: 10px;
-}
-.c-text{
-    margin-top: 20px;
-    position: fixed;
-    left: 850px;
-    top: 460px;
-    z-index: 10;
-    right: 0;
-   
-}
-.c-text button{
-    border: none;
-    cursor: pointer;
-height: 50px;
-width: 120px;
-border-radius: 10px;
-background-color: blueviolet;
-    color: aliceblue;
-}
 
-#close-bot {
-height: 40px;
+button:hover{
+    background-color: rgb(32, 22, 41);
 }
-
-.e-text img{
-    width: 3%;
-    float: right;
-    position: relative;
-    right: 140px;
-    top: -25px;
+.wrapper{
+    animation: popup 1s;
 }
-
+@keyframes popup{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    60%{
+        transform: scale(1.1);
+    }
+    70%{
+        transform: scale(1.2);
+    }
+    80%{
+        transform: scale(1);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
