@@ -21,7 +21,7 @@
           </label>
 
          
-          <div class="container wrapper w-100 ">
+          <div class="container wrapper w-50 ">
             <div class="row">
               
                 <h2>Welcome To Amienpay</h2>
@@ -98,19 +98,18 @@
             .then(
                 (response) => response.json()
             )
-            .then(
-                (responseData) => {
-                    let result = responseData;
-
-                    if (result.success == "") {
-                        alert(result.error)
-                    }
-                    else if (result.error == "") {
-                        alert(result.success)
-                    }
-                }
-            );
-        });
+            .then(res => {
+                console.log(res)
+                
+                   {message: 'your response has been taken'}
+                    swal({
+                        title:"Good job",
+                        text:'Your complaint has been received and logged successfully, a customer care representative will attend to you shortly',
+                        icon: "success",
+                    });
+                })
+            });
+    
 
         
     </script>
